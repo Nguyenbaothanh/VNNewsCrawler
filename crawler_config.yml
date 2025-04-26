@@ -1,8 +1,10 @@
-# Web that want to crawls (only support vnexpress now)
+# crawler_config.yml
+
+# Name of news website that want to crawls (vnexpress, dantri, vietnamnet)
 webname: "vnexpress"
 
 # tasks = ["url", "type"]
-task: "url"
+task: "type"
 
 #logger config file path
 logger_fpath: "logger/logger_config.yml"
@@ -12,5 +14,5 @@ num_workers: 1
 
 # if task == "type": 
 # article_type == "all" to crawl all of types
-article_type: "du-lich"
+article_types: ["du-lich"]
 total_pages: 1
